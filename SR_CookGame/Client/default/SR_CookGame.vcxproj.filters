@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="00.MainApp">
+      <UniqueIdentifier>{d42b39d1-36ae-463b-95b1-c6f69e751dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="99.Default">
+      <UniqueIdentifier>{9479ee46-c56a-4494-aecc-f9c498b40a19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Defines">
+      <UniqueIdentifier>{3829573e-c9f7-40d3-9ea9-7dd3bfeec368}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level">
+      <UniqueIdentifier>{aafc6ff4-f6ab-464e-b470-e48b0bce36cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject">
+      <UniqueIdentifier>{f1e1ab25-0553-4afb-8064-e4fd5de78007}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\00.Loading">
+      <UniqueIdentifier>{bdd54162-7026-4ece-9a9b-04296ec81743}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\00.Loading\Loader">
+      <UniqueIdentifier>{0e75a139-ea14-4270-82c3-9877564565b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\01.Logo">
+      <UniqueIdentifier>{dc33c305-cee8-4813-b7f3-0affabeb023a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\02.Play">
+      <UniqueIdentifier>{6ef405b1-0d66-4762-bcf5-0dd066a136f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\00.Player">
+      <UniqueIdentifier>{7f5a162c-9205-4c9c-bcd9-63b54aa8d886}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\01.Food">
+      <UniqueIdentifier>{d5fcdb12-a540-4b4a-88de-37fff0e75721}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\02.TerrainBox">
+      <UniqueIdentifier>{1e9849f0-4621-4c82-9ee3-dd5b6fb46725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\03.SkyBox">
+      <UniqueIdentifier>{fa4e197c-c52f-4b56-b045-7ddf675158c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\04.Camera">
+      <UniqueIdentifier>{e6a45ff1-c9e4-4664-9e9a-ff71d1ceefc5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\04.Camera\00.TPSCamera">
+      <UniqueIdentifier>{b198493e-1a1e-488b-88ae-09085e49af66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\05.ResponseBox">
+      <UniqueIdentifier>{ed476899-2de5-4b3e-9793-cedff68c821c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI">
+      <UniqueIdentifier>{4919e51a-73a9-4176-934e-54cfca68e147}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\00.Logo_BackGround">
+      <UniqueIdentifier>{484918e3-afc2-47ac-8e1d-15fb300f1b99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\01.FoodList">
+      <UniqueIdentifier>{1541a2d9-9315-4f77-b7e1-850e31844b61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\02.FoodIcon">
+      <UniqueIdentifier>{c5e22193-209f-4b52-a6f0-6b0751b3db75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\03.FoodList_BackGround">
+      <UniqueIdentifier>{8bd1e3c1-bd52-4037-b39e-2cccc2b4f937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\04.ITemCount">
+      <UniqueIdentifier>{75de5f26-8ab5-43a8-a706-af533d63b9b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\08.Effect">
+      <UniqueIdentifier>{1dd68ebd-d58a-43f6-b25b-0f87cca7f7f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\05.Start_Button">
+      <UniqueIdentifier>{35c68d40-8134-4118-8d4d-dcb6789127d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\03.Clear">
+      <UniqueIdentifier>{16435439-1fc4-469f-8e06-74e89d00308f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Level\04.End">
+      <UniqueIdentifier>{96496ac9-7194-41b3-8e8b-0121c9236db0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\06.Loading_BackGround">
+      <UniqueIdentifier>{c52d5428-55fe-4636-bf14-72b68aeea6a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\07.Clear_BackGround">
+      <UniqueIdentifier>{61675e5a-90d2-4072-95d5-26b10cbfbf25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\08.End_BackGround">
+      <UniqueIdentifier>{746b1a9f-5119-473c-ae4c-844c9b90587d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.GameObject\07.UI\09.Trash_Icon">
+      <UniqueIdentifier>{c2966575-5ec6-48ba-a9cf-08299d772df7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="SR_CookGame.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\MainApp.h">
+      <Filter>00.MainApp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Client_Defines.h">
+      <Filter>98.Defines</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Loader.h">
+      <Filter>01.Level\00.Loading\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Level_Loading.h">
+      <Filter>01.Level\00.Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Player.h">
+      <Filter>02.GameObject\00.Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\TPSCamera.h">
+      <Filter>02.GameObject\04.Camera\00.TPSCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Level_Logo.h">
+      <Filter>01.Level\01.Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Level_PlayStage.h">
+      <Filter>01.Level\02.Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\ResponseBox.h">
+      <Filter>02.GameObject\05.ResponseBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\UI.h">
+      <Filter>02.GameObject\07.UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\BackGround.h">
+      <Filter>02.GameObject\07.UI\00.Logo_BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\SkyBox.h">
+      <Filter>02.GameObject\03.SkyBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\TerrainBox.h">
+      <Filter>02.GameObject\02.TerrainBox</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Food.h">
+      <Filter>02.GameObject\01.Food</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\FoodList.h">
+      <Filter>02.GameObject\07.UI\01.FoodList</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\FoodIcon.h">
+      <Filter>02.GameObject\07.UI\02.FoodIcon</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\FoodList_BackGround.h">
+      <Filter>02.GameObject\07.UI\03.FoodList_BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\ItemCount.h">
+      <Filter>02.GameObject\07.UI\04.ITemCount</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Effect.h">
+      <Filter>02.GameObject\08.Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Start_Button.h">
+      <Filter>02.GameObject\07.UI\05.Start_Button</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Level_Clear.h">
+      <Filter>01.Level\03.Clear</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Level_End.h">
+      <Filter>01.Level\04.End</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Loading_BackGround.h">
+      <Filter>02.GameObject\07.UI\06.Loading_BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Clear_BackGround.h">
+      <Filter>02.GameObject\07.UI\07.Clear_BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\End_BackGround.h">
+      <Filter>02.GameObject\07.UI\08.End_BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\public\Trash_Icon.h">
+      <Filter>02.GameObject\07.UI\09.Trash_Icon</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SR_CookGame.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\MainApp.cpp">
+      <Filter>00.MainApp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Loader.cpp">
+      <Filter>01.Level\00.Loading\Loader</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Level_Loading.cpp">
+      <Filter>01.Level\00.Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Player.cpp">
+      <Filter>02.GameObject\00.Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\TPSCamera.cpp">
+      <Filter>02.GameObject\04.Camera\00.TPSCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Level_Logo.cpp">
+      <Filter>01.Level\01.Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Level_PlayStage.cpp">
+      <Filter>01.Level\02.Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\ResponseBox.cpp">
+      <Filter>02.GameObject\05.ResponseBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\UI.cpp">
+      <Filter>02.GameObject\07.UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\BackGround.cpp">
+      <Filter>02.GameObject\07.UI\00.Logo_BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\SkyBox.cpp">
+      <Filter>02.GameObject\03.SkyBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\TerrainBox.cpp">
+      <Filter>02.GameObject\02.TerrainBox</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Food.cpp">
+      <Filter>02.GameObject\01.Food</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\FoodList.cpp">
+      <Filter>02.GameObject\07.UI\01.FoodList</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\FoodIcon.cpp">
+      <Filter>02.GameObject\07.UI\02.FoodIcon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\FoodList_BackGround.cpp">
+      <Filter>02.GameObject\07.UI\03.FoodList_BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\ItemCount.cpp">
+      <Filter>02.GameObject\07.UI\04.ITemCount</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Effect.cpp">
+      <Filter>02.GameObject\08.Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Start_Button.cpp">
+      <Filter>02.GameObject\07.UI\05.Start_Button</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Level_Clear.cpp">
+      <Filter>01.Level\03.Clear</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Level_End.cpp">
+      <Filter>01.Level\04.End</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Loading_BackGround.cpp">
+      <Filter>02.GameObject\07.UI\06.Loading_BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Clear_BackGround.cpp">
+      <Filter>02.GameObject\07.UI\07.Clear_BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\End_BackGround.cpp">
+      <Filter>02.GameObject\07.UI\08.End_BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\Trash_Icon.cpp">
+      <Filter>02.GameObject\07.UI\09.Trash_Icon</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+    <Image Include="SR_CookGame.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SR_CookGame.rc">
+      <Filter>99.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99.Default</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

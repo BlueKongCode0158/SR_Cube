@@ -1,0 +1,2 @@
+﻿  stdafx.cpp
+c:\users\bluek\desktop\jusin\sr_sollogame\sr_cookgame\sr_cookgame\client\default\stdafx.h(22): fatal error C1083: 포함 파일을 열 수 없습니다. 'Client_Defines.h': No such file or directory
