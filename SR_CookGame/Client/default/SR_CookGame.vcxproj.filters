@@ -91,6 +91,9 @@
     <Filter Include="02.GameObject\07.UI\09.Trash_Icon">
       <UniqueIdentifier>{c2966575-5ec6-48ba-a9cf-08299d772df7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="03.Sound">
+      <UniqueIdentifier>{09370547-5b48-4caf-a1b0-5dab8f9a0158}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Resource.h">
@@ -183,6 +186,9 @@
     <ClInclude Include="..\public\Trash_Icon.h">
       <Filter>02.GameObject\07.UI\09.Trash_Icon</Filter>
     </ClInclude>
+    <ClInclude Include="..\public\SoundMgr.h">
+      <Filter>03.Sound</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SR_CookGame.cpp">
@@ -265,6 +271,9 @@
     </ClCompile>
     <ClCompile Include="..\private\Trash_Icon.cpp">
       <Filter>02.GameObject\07.UI\09.Trash_Icon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\private\SoundMgr.cpp">
+      <Filter>03.Sound</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

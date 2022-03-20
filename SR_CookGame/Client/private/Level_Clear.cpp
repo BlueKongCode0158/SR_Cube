@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "..\public\Level_Clear.h"
 #include "GameInstance.h"
+#include "SoundMgr.h"
 #include "UI.h"
 
 CLevel_Clear::CLevel_Clear(LPDIRECT3DDEVICE9 pGraphic_Device)
@@ -10,6 +11,8 @@ CLevel_Clear::CLevel_Clear(LPDIRECT3DDEVICE9 pGraphic_Device)
 
 HRESULT CLevel_Clear::NativeConstruct()
 {
+	CSoundMgr::Get_Instance()->StopAll();
+	CSoundMgr::Get_Instance()->PlayBGM(L"Clear_Background.wav");
 	if (FAILED(__super::NativeConstruct()))
 	{
 		return E_FAIL;

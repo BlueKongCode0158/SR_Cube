@@ -1,4 +1,7 @@
 #pragma once
+#include "io.h"
+#include "fmod.h"
+#include "SoundMgr.h"
 
 enum LEVEL { LEVEL_STATIC, LEVEL_LOGO, LEVEL_LOADING, LEVEL_GAMEPLAY0, LEVEL_CLEAR, LEVEL_GAMEOVER, LEVEL_END };
 

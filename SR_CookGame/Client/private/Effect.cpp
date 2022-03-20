@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "..\public\Effect.h"
 #include "GameInstance.h"
+#include "SoundMgr.h"
 
 CEffect::CEffect(LPDIRECT3DDEVICE9 pGraphic_Device)
 	:CGameObject(pGraphic_Device)
@@ -23,6 +24,9 @@ HRESULT CEffect::NativeConstruct_Prototype()
 
 HRESULT CEffect::NativeConstruct(void * pArg)
 {
+	CSoundMgr::Get_Instance()->StopSound(CSoundMgr::CHANNELID::EFFECT);
+	CSoundMgr::Get_Instance()->PlaySound(L"Metalic_Pang.wav", CSoundMgr::CHANNELID::EFFECT);
+
 	if (FAILED(__super::NativeConstruct(pArg)))
 	{
 		return E_FAIL;

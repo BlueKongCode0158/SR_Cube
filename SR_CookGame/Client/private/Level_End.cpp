@@ -4,6 +4,7 @@
 #include "UI.h"
 #include "Level_Loading.h"
 #include "Level_PlayStage.h"
+#include "SoundMgr.h"
 
 CLevel_End::CLevel_End(LPDIRECT3DDEVICE9 pGraphic_Device)
 	:CLevel(pGraphic_Device)
@@ -12,6 +13,9 @@ CLevel_End::CLevel_End(LPDIRECT3DDEVICE9 pGraphic_Device)
 
 HRESULT CLevel_End::NativeConstruct()
 {
+	CSoundMgr::Get_Instance()->StopAll();
+	CSoundMgr::Get_Instance()->PlayBGM(L"GameOver_Background.wav");
+
 	if (FAILED(__super::NativeConstruct()))
 	{
 		return E_FAIL;

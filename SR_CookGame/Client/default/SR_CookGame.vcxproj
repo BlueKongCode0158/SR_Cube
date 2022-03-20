@@ -100,7 +100,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>Engine.lib;d3dx9.lib;d3d9.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>Engine.lib;d3dx9.lib;d3d9.lib;fmodex_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>..\..\Reference\lib\;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
@@ -177,6 +177,7 @@
     <ClInclude Include="..\public\Player.h" />
     <ClInclude Include="..\public\ResponseBox.h" />
     <ClInclude Include="..\public\SkyBox.h" />
+    <ClInclude Include="..\public\SoundMgr.h" />
     <ClInclude Include="..\public\Start_Button.h" />
     <ClInclude Include="..\public\TerrainBox.h" />
     <ClInclude Include="..\public\TPSCamera.h" />
@@ -208,6 +209,7 @@
     <ClCompile Include="..\private\Player.cpp" />
     <ClCompile Include="..\private\ResponseBox.cpp" />
     <ClCompile Include="..\private\SkyBox.cpp" />
+    <ClCompile Include="..\private\SoundMgr.cpp" />
     <ClCompile Include="..\private\Start_Button.cpp" />
     <ClCompile Include="..\private\TerrainBox.cpp" />
     <ClCompile Include="..\private\TPSCamera.cpp" />

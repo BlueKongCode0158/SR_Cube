@@ -10,6 +10,7 @@
 #include "Loading_BackGround.h"
 #include "End_BackGround.h"
 #include "Clear_BackGround.h"
+#include "SoundMgr.h"
 
 
 CMainApp::CMainApp()
@@ -19,6 +20,9 @@ CMainApp::CMainApp()
 HRESULT CMainApp::NativeConstruct()
 {
 	CGameInstance*		pGameInstance = GET_INSTANCE(CGameInstance);
+
+	CSoundMgr::Get_Instance()->Initialize();
+
 	if (FAILED(pGameInstance->Initialize_Engine(g_hInst, g_hWnd, LEVEL_END)))
 		return E_FAIL;
 
@@ -186,6 +190,7 @@ void CMainApp::Free()
 	Safe_Release(m_pRendererCom);
 	Safe_Release(m_pPickingCom);
 
+	CSoundMgr::Destroy_Instance();
 	CGameInstance::Release_Engine();
 	CFoodList::Destroy_Instance();
 }

@@ -4,6 +4,7 @@
 #include "Level_Loading.h"
 #include "UI.h"
 #include "Start_Button.h"
+#include "SoundMgr.h"
 
 
 CLevel_Logo::CLevel_Logo(LPDIRECT3DDEVICE9 pGraphic_Device)
@@ -14,6 +15,8 @@ CLevel_Logo::CLevel_Logo(LPDIRECT3DDEVICE9 pGraphic_Device)
 
 HRESULT CLevel_Logo::NativeConstruct()
 {
+
+	CSoundMgr::Get_Instance()->PlayBGM(L"Start_Background.mp3");
 	if (FAILED(__super::NativeConstruct()))
 	{
 		return E_FAIL;

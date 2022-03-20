@@ -12,6 +12,7 @@
 #include "Level_End.h"
 #include "FoodList.h"
 #include "Level_Loading.h"
+#include "SoundMgr.h"
 
 CLevel_PlayStage::CLevel_PlayStage(LPDIRECT3DDEVICE9 pGraphic_Device)
 	:CLevel(pGraphic_Device)
@@ -21,6 +22,9 @@ CLevel_PlayStage::CLevel_PlayStage(LPDIRECT3DDEVICE9 pGraphic_Device)
 
 HRESULT CLevel_PlayStage::NativeConstruct()
 {
+	CSoundMgr::Get_Instance()->StopAll();
+	CSoundMgr::Get_Instance()->PlayBGM(L"Play_Background.mp3");
+
 	if (FAILED(__super::NativeConstruct()))
 	{
 		return E_FAIL;
