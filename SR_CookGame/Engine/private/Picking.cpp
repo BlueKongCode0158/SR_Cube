@@ -1,4 +1,4 @@
-#include "..\public\Picking.h"
+ï»¿#include "..\public\Picking.h"
 #include "PipeLine.h"
 #include "VIBuffer.h"
 
@@ -21,10 +21,10 @@ HRESULT CPicking::Compute_MouseCursorPosInWorld(HWND hWnd)
 
 	GetCursorPos(&ptMouse);
 
-	/* ºäÆ÷Æ® ½ºÆäÀÌ½º »óÀÇ ¸¶¿ì½º À§Ä¡. */
+	/* ë·°í¬íŠ¸ ìŠ¤í˜ì´ìŠ¤ ìƒì˜ ë§ˆìš°ìŠ¤ ìœ„ì¹˜. */
 	ScreenToClient(hWnd, &ptMouse);
 
-	/* Åõ¿µ½ºÆäÀÌ½º±îÁö º¯È¯. */
+	/* íˆ¬ì˜ìŠ¤í˜ì´ìŠ¤ê¹Œì§€ ë³€í™˜. */
 	D3DVIEWPORT9			ViewPort;
 	m_pGraphic_Device->GetViewport(&ViewPort);
 
@@ -33,20 +33,17 @@ HRESULT CPicking::Compute_MouseCursorPosInWorld(HWND hWnd)
 	vMousePos.z = 0.f;
 	vMousePos.w = 1.f;
 
-	/* ³ª´©¾î¤¿¤¶´ø W(VIEW Z) °ªÀ» ´Ù½Ã °öÇØÁØ´Ù. */
-
-	/* ºä½ºÆäÀÌ½º±îÁö º¯È¯. */
+	/* ë·°ìŠ¤í˜ì´ìŠ¤ê¹Œì§€ ë³€í™˜. */
 	CPipeLine*		pPipeLine = GET_INSTANCE(CPipeLine);
 
 	_matrix			ProjMatrix;
 	ProjMatrix = pPipeLine->Get_Transform(D3DTS_PROJECTION);
 	D3DXVec4Transform(&vMousePos, &vMousePos, D3DXMatrixInverse(&ProjMatrix, nullptr, &ProjMatrix));
 	
-
 	m_vMouseRay = _float3(vMousePos.x - 0.f, vMousePos.y - 0.f, vMousePos.z - 0.f);
 	m_vMousePivot = _float3(0.f, 0.f, 0.f);
 
-	/* ¿ùµå½ºÆäÀÌ½º±îÁö º¯È¯. */
+	/* ì›”ë“œìŠ¤í˜ì´ìŠ¤ê¹Œì§€ ë³€í™˜. */
 	_matrix			ViewMatrix;
 	ViewMatrix = pPipeLine->Get_Transform(D3DTS_VIEW);
 	D3DXMatrixInverse(&ViewMatrix, nullptr, &ViewMatrix);
@@ -65,7 +62,6 @@ _float3* CPicking::Compute_PickingPoint(CVIBuffer* pVIBuffer, _matrix WorldMatri
 
 	_matrix		WorldMatrixInverse = *D3DXMatrixInverse(&WorldMatrixInverse, nullptr, &WorldMatrix);
 
-	/* ÁöÇü ·ÎÄÃ½ºÆäÀÌ½º¿¡ ÀÖ´Â ·¹ÀÌ¿Í ÇÇ¹şÀ» ±¸ÇÑ´Ù. */
 	D3DXVec3TransformCoord(&vPivot, &m_vMousePivot, &WorldMatrixInverse);
 	D3DXVec3TransformNormal(&vRay, &m_vMouseRay, &WorldMatrixInverse);
 
